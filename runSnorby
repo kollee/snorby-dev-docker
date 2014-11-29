@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export RAILS_ENV=development
+cd /opt/snorby
+
+bundle install
+
+bundle exec rake snorby:update
+bundle exec rails s
