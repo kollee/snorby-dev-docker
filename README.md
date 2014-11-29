@@ -31,11 +31,11 @@ Running the container
 =====================
 
 ```
-sudo docker run -d --name snorby-dev --link database:database -p 3000:3000 -v `pwd`/snorby:/opt/snorby snorby-dev:v3 /opt/runSnorby
+sudo docker run -d --name snorby-dev --link database:database -p 3000:3000 -v `pwd`/snorby:/opt/snorby snorby-dev /opt/runSnorby
 ```
 
 or
 
 ```
-sudo docker run -i -t --name snorby-dev --link database:database -p 3000:3000 -v `pwd`/snorby:/opt/snorby snorby-dev:v3 /bin/bash
+sudo docker run -i -t --name snorby-dev --link database:database -p 3000:3000 -v `pwd`/snorby:/opt/snorby snorby-dev /bin/bash
 ```
